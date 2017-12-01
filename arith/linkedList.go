@@ -2,9 +2,9 @@ package arith
 
 type LinkedNode struct {
 	data int
-	next * LinkedNode
+	next *LinkedNode
 }
 
-func CreateLinkedListByTail(data []int){
+func CreateLinkedListByTail(data []int) {
 
 }

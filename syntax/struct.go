@@ -32,7 +32,8 @@ func DeclareStruct() {
 
 	fmt.Println(n3)
 
-	person := struct { //定义匿名结构体变量
+	person := struct {
+		//定义匿名结构体变量
 		name string
 		age  byte
 	}{
@@ -42,31 +43,33 @@ func DeclareStruct() {
 
 	fmt.Println(person)
 
-	type file  struct {
+	type file struct {
 		name string
-		attr struct{ //匿名结构体成员变量
+		attr struct {
+			//匿名结构体成员
 			owner int
-			perm int
+			perm  int
 		}
 	}
 
-	f:=file{
-		name:"XH",
+	f := file{
+		name: "XH",
 		attr: struct {
+			//匿名结构体成员的初始化，重新声明一遍
 			owner int
 			perm  int
-		}{owner:23 , perm: 23},
+		}{owner: 23, perm: 23},
 	}
 
 	fmt.Println(f)
 
-
-	v:= struct {  //对齐方式
+	v := struct {
+		//对齐方式
 		a byte
-		b []int   //底层有指针，len,cap
+		b []int //底层有指针，len,cap
 		c byte
 	}{}
 
-	fmt.Println(unsafe.Alignof(v),unsafe.Sizeof(v))//8 40
+	fmt.Println(unsafe.Alignof(v), unsafe.Sizeof(v)) //8 40
 
 }

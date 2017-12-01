@@ -69,7 +69,7 @@ func DeclareArray() {
 	var t2 = [...]int{1: 67, 9: 234}
 	fmt.Println(t1, t2)
 
-	var t3[0]int   //数组长度可以为0
+	var t3 [0]int //数组长度可以为0
 	fmt.Println(t3)
 
 	getFibonacci(50)

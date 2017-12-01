@@ -5,7 +5,3 @@ type Tree struct {
 	data  int32
 	right *Tree
 }
-
-
-
-
