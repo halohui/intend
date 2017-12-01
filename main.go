@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"newbie/syntax"
+	"intend/syntax"
 )
 
 func main() {
