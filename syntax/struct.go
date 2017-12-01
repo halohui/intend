@@ -67,6 +67,6 @@ func DeclareStruct() {
 		c byte
 	}{}
 
-	fmt.Println(unsafe.Alignof(v),unsafe.Sizeof(v))
+	fmt.Println(unsafe.Alignof(v),unsafe.Sizeof(v))//8 40
 
 }
