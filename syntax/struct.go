@@ -63,7 +63,7 @@ func DeclareStruct() {
 
 	v:= struct {  //对齐方式
 		a byte
-		b []int
+		b []int   //底层有指针，len,cap
 		c byte
 	}{}
 
