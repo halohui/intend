@@ -29,7 +29,7 @@ func main() {
 	//syntax.AboutMap()
 	//syntax.DeclareStruct()
 	//syntax.DeclareConst()
-	syntax.UseIfElse()
+	//syntax.UseIfElse()
 	syntax.UseSwitch(1)
 
 
