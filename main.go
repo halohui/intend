@@ -5,6 +5,8 @@ import (
 	"intend/syntax"
 )
 
+var tt =345
+
 func main() {
 
 	//data := []int{89, 34, 2, 3, 8, 11, 89, 233, 5, 8, 12, 3, 6}
@@ -28,14 +30,10 @@ func main() {
 	//syntax.AboutMap()
 	//syntax.DeclareStruct()
 	//syntax.DeclareConst()
-	syntax.UseFunc()
+
 
 }
 
 /*func init() {
 	fmt.Println("This init function in main!")
 }*/
-
-func Hello() {
-	fmt.Println("hello world!")
-}
