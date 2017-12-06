@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"intend/syntax"
 )
 
@@ -30,6 +29,8 @@ func main() {
 	//syntax.AboutMap()
 	//syntax.DeclareStruct()
 	//syntax.DeclareConst()
+	syntax.UseIfElse()
+	syntax.UseSwitch(1)
 
 
 }
