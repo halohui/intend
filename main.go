@@ -32,6 +32,8 @@ func main() {
 	//syntax.UseIfElse()
 	syntax.UseSwitch(1)
 
+	a:=[]int{1,2,4}
+	syntax.VarLength(a...)
 
 }
 

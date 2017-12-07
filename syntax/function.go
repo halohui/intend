@@ -34,9 +34,13 @@ func Min(data ... int) int {
 
 func Anonymity() {
 	//匿名函数赋值给变量，然后使用变量来调用函数
-	f:=func(name string){
+	f := func(name string) {
 		fmt.Println(name)
 	}
 
 	f("hello,world")
+}
+
+func VarLength(a ...int) {
+	fmt.Println(a)
 }
