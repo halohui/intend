@@ -34,7 +34,7 @@ func main() {
 
 	a:=[]int{1,2,4}
 	syntax.VarLength(a...)
-
+	syntax.AboutMap()
 
 }
 
