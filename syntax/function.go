@@ -44,3 +44,10 @@ func Anonymity() {
 func VarLength(a ...int) {
 	fmt.Println(a)
 }
+
+func TestInterface() {
+	var t1, t2 interface{}
+	t1 = 200
+	t2 = map[int]string{}
+	fmt.Println(t1 == t2)
+}

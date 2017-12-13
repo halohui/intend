@@ -2,12 +2,15 @@ package main
 
 import (
 	"intend/syntax"
+	"fmt"
+	"time"
 )
 
 var tt =345
 
 func main() {
 
+	start:=time.Now()
 	//data := []int{89, 34, 2, 3, 8, 11, 89, 233, 5, 8, 12, 3, 6}
 	//data:=[]int{9,3,2,3,8,1,8,3,5,8,2,3,6}
 	//fmt.Println(data)
@@ -36,8 +39,46 @@ func main() {
 	syntax.VarLength(a...)
 	syntax.AboutMap()
 
+	data :=[3] int{10,20,30}
+	for i,x := range data {
+		if i == 0{
+			data[0] += 100
+			data[1] += 200
+			data[2] += 300
+		}
+		fmt.Println(x,data[i])
+	}//10 110 20 220 30 330
+	for i,x := range data[:] {
+		if i == 0{
+			data[0] += 100
+			data[1] += 200
+			data[2] += 300
+		}
+		fmt.Println(x,data[i])
+	}//110 210 420 420 630 630吗
+
+	 end:=time.Now()
+	delta := end.Sub(start)
+	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
+
+	var xxx HT
+	xxx.testHT()
+
+
+
 }
 
+type HT struct {
+	x int
+}
 /*func init() {
 	fmt.Println("This init function in main!")
 }*/
+
+func tt1(a ...int)  {
+	fmt.Println(a)
+}
+
+func( a HT)testHT(){
+	fmt.Println("HT")
+}
