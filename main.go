@@ -64,10 +64,11 @@ func main() {
 	xxx.testHT()
 	//task.PrintNTo1(10)
 	//task.Print1ToN(10)
-	task.Factorial(30
+	task.Factorial(30)
 
 	end := time.Now()
 	delta := end.Sub(start)
+	syntax.ShapeAndSquare()
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
 }

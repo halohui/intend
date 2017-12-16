@@ -4,6 +4,7 @@ import (
 	"math"
 	"errors"
 	"fmt"
+	"math/big"
 )
 
 /****************************************************************************
@@ -136,15 +137,16 @@ func Print1ToN(n int) {
 *  2017-12-14 20:48:16          0.00           cxh                创建
 *
 *****************************************************************************/
-func Factorial(n uint64) (ret uint64) {
+func Factorial(n int64) (ret *big.Int) {
 	if n == 0 {
-		return 1
+		return big.NewInt(1)
 	} else {
-		ret = n * Factorial(n-1)
+			temp:=new(big.Int)
+			ret =temp.Mul(big.NewInt(n),Factorial(n-1))
 	}
 
 	if n<=30 {
-		fmt.Println(ret)
+		defer fmt.Println(ret)
 	}
 	return
 }
