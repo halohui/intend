@@ -58,8 +58,6 @@ func main() {
 		fmt.Println(x, data[i])
 	} //110 210 420 420 630 630吗
 
-
-
 	var xxx HT
 	xxx.testHT()
 	//task.PrintNTo1(10)
@@ -70,6 +68,7 @@ func main() {
 	delta := end.Sub(start)
 	syntax.ShapeAndSquare()
 	syntax.RectangleAndSquare()
+	syntax.ShowValuable()
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
 }

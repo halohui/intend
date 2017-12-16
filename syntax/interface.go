@@ -51,12 +51,32 @@ type stockPosition struct {
 	count      float64
 }
 
-func (s *stockPosition) GetVaue() float64 {
+func (s stockPosition) GetValue() float64 {
 	return s.sharePrice * s.count //直接计算价值时，如果先将count定义为int时会报错，类型不兼容
 }
 
 type car struct {
 	make  string
 	model string
-	price float32
+	price float64
+}
+
+func (c car) GetValue() float64 {
+	return c.price
+}
+
+type valuable interface {
+	//接口类型
+	GetValue() float64
+}
+
+func showValue(assert valuable) {
+	fmt.Println("The value of your assert is:", assert.GetValue())
+}
+
+func ShowValuable() {
+	var o valuable = stockPosition{"GOOG", 577.20, 4}
+	showValue(o)
+	o = car{"BMW", "M3", 66500}
+	showValue(o)
 }
