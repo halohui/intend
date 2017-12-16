@@ -44,3 +44,19 @@ func RectangleAndSquare() {
 		fmt.Println("这个形状的面积: ", shapes[i].Area())
 	}
 }
+
+type stockPosition struct {
+	ticker     string
+	sharePrice float64
+	count      float64
+}
+
+func (s *stockPosition) GetVaue() float64 {
+	return s.sharePrice * s.count //直接计算价值时，如果先将count定义为int时会报错，类型不兼容
+}
+
+type car struct {
+	make  string
+	model string
+	price float32
+}
