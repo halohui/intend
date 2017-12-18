@@ -6,7 +6,7 @@ import (
 )
 
 type shape interface {
-	Area() float64 //不用func关键字
+	Area() float64 //不用func关键字，也不用指定接收者，因为实际上它是动态类型å
 }
 
 type Square struct {
@@ -24,7 +24,7 @@ type Rectangle struct {
 func (r Rectangle) Area() float64 {
 	return r.width * r.length
 }
-func ShapeAndSquare() {
+func ShaperAndSquare() {
 	sq1 := new(Square)
 	sq1.side = 5
 
@@ -37,7 +37,7 @@ func RectangleAndSquare() {
 	r := Rectangle{5, 3} // Area() of Rectangle needs a value
 	q := &Square{5}      // Area() of Square needs a pointer
 	// shapes := []Shaper{Shaper(r), Shaper(q)} // or shorter
-	shapes := []shape{r, q}
+	shapes := []shape{r, q}  //简化形式
 
 	for i := range shapes {
 		fmt.Println("形状信息", shapes[i])
