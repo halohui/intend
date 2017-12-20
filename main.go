@@ -69,6 +69,7 @@ func main() {
 	syntax.ShaperAndSquare()
 	syntax.RectangleAndSquare()
 	syntax.ShowValuable()
+	syntax.BaseUse()
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
 }
