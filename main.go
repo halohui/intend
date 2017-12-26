@@ -7,7 +7,7 @@ import (
 	"intend/task"
 )
 
-var tt = 345
+var tt = 345  //未使用的全局变量不会提示编译错误
 
 func main() {
 
@@ -71,6 +71,19 @@ func main() {
 	syntax.ShowValuable()
 	syntax.BaseUse()
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
+
+	const x = 100
+	const y byte = x //直接展开x，相当于const y byte = 100
+
+	const (
+		t1, t2 int  = 99, -999
+		t3     byte = byte(t1) //t1 指定为int型，需显式转换为byte类型
+		//t4 = uint8(t2)  // 常量-999,超出了unit8的范围
+	)
+
+	/*const y1 int =3
+	const y2 int =y1
+	fmt.Println(&y2)*/
 
 }
 
