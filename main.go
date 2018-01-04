@@ -7,7 +7,7 @@ import (
 	"intend/task"
 )
 
-var tt = 345  //未使用的全局变量不会提示编译错误
+var tt = 345 //未使用的全局变量不会提示编译错误
 
 func main() {
 
@@ -70,7 +70,6 @@ func main() {
 	syntax.RectangleAndSquare()
 	syntax.ShowValuable()
 	syntax.BaseUse()
-	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
 	const x = 100
 	const y byte = x //直接展开x，相当于const y byte = 100
@@ -84,15 +83,15 @@ func main() {
 	/*const y1 int =3
 	const y2 int =y1
 	fmt.Println(&y2)*/
-	data1 := [3]string{"a","b","c"};
+	data1 := [3]string{"a", "b", "c"};
 	fmt.Println(data1)
-	for range data{
+	for range data {
 
 	}
 	fmt.Println(data1)
 
 	syntax.VariableDeclare()
-
+	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 }
 
 type HT struct {
