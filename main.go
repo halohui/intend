@@ -84,6 +84,14 @@ func main() {
 	/*const y1 int =3
 	const y2 int =y1
 	fmt.Println(&y2)*/
+	data1 := [3]string{"a","b","c"};
+	fmt.Println(data1)
+	for range data{
+
+	}
+	fmt.Println(data1)
+
+	syntax.VariableDeclare()
 
 }
 
