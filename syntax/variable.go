@@ -20,3 +20,18 @@ func fib(n int) int {
 	}
 	return x
 }
+
+func DecVar()  {
+	var x int  = 23  //都不省略
+	var y = 23    //省略类型
+	var z1,z2 int   //省略表达式
+
+	fmt.Println(x,y,z1,z2)
+
+	var(
+		t1,t2 = 23,78
+		a1,a2=100,"abc"  //不同类型
+
+	)
+	fmt.Println(t1,t2,a1,a2)
+}

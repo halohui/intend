@@ -97,7 +97,7 @@ func main() {
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
 	syntax.UseStrconv()
-
+    syntax.DecVar()
 
 }
 
