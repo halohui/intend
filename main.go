@@ -91,6 +91,9 @@ func main() {
 	fmt.Println(data1)
 
 	syntax.VariableDeclare()
+	fmt.Println(^3,^uint8(3))
+
+	const yyu int32 =45.8
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 }
 
