@@ -96,8 +96,9 @@ func main() {
 	const yyu int32 =45
 	fmt.Printf("从main函数执行开始到结束的时间耗费: %s\n", delta)
 
-	aaa := 34
-	fmt.Printf("0b%#b,0b%b",aaa,aaa)
+	syntax.UseStrconv()
+
+
 }
 
 type HT struct {
